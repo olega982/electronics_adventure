@@ -1,0 +1,137 @@
+
+/* MAINPAGE */
+@font-face {
+    font-family: pixelFont;
+    src: url("./small_font.ttf");
+}
+
+body{
+    background-image: url("./assets/desktop/background.jpeg") ;
+    background-position: center;
+    color:aliceblue;
+}
+
+.label{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 200px;
+    height:200px;
+}
+.fw-normal{
+    font-family: pixelFont;
+}
+
+.about-photo{
+    width:100%;
+}
+
+.contacts-section{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 200px;  
+}
+.section{
+    text-align: center;
+    animation: float 3s ease-out infinite;
+}
+
+/* ANIMATION */
+.section:nth-child(1) {
+    animation: float1 3s ease-out infinite;
+}
+
+@keyframes float1 {
+    50% {
+        transform: translateX(50px);
+    }
+}
+
+/* Styles for the second section */
+.section:nth-child(2) {
+    animation: float2 3s ease-out infinite;
+}
+
+@keyframes float2 {
+    50% {
+        transform: translateX(-100px);
+    }
+}
+
+/* Styles for the third section */
+.section:nth-child(3) {
+    animation: float3 3s ease-out infinite;
+}
+
+@keyframes float3 {
+    50% {
+        transform: translateX(150px);
+    }
+}
+/* Footer */
+.inc-name{
+    margin-left: 100px;
+}
+.oleg-socials{
+    color:white;
+}
+.text-body-secondary{
+    color: white;
+}
+.info-footer{
+    border-top: 2px solid aliceblue;
+}
+
+footer .text-body-secondary,.soical{
+    color:white
+}
+
+/* //PHOTOS */
+#carouselExampleIndicators{
+    margin-top: 20px;
+}
+.img-carousel {
+    object-fit: cover;
+    height:900px; 
+}
+#photos-header{
+    text-align: center;
+    font-family: pixelFont;
+    margin-top: 50px;
+}
+.container{
+    margin-bottom: 50px;
+}
+
+/* MUSIC */
+#music-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* HOME */
+.home{
+ text-align: center;
+    font-family: pixelFont;
+}
+.floating-container {
+    animation: float 3s ease-out infinite;
+  }
+  @keyframes float {
+    50% {
+      transform: translateY(50px);
+    }
+}
+
+.carousel-item img{
+    width: 100%;
+}
