@@ -5,41 +5,37 @@
     src: url("./small_font.ttf");
 }
 
+.responsive-image{
+    content: url("./assets/desktop/desktop_gif.gif");
+}
+
 body{
     background-image: url("./assets/desktop/background.jpeg") ;
-    background-position: center;
     color:aliceblue;
 }
 
 .label{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon{
-    width: 200px;
-    height:200px;
-}
-.fw-normal{
-    font-family: pixelFont;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
-.about-photo{
-    width:100%;
+.icon{
+    width: 150px;
+    height:150px;
+}
+
+.fw-normal{
+    font-family: pixelFont;
 }
 
 .contacts-section{
     display: flex;
     flex-direction: column;
-    gap: 150px;
-    justify-content: center;
-    align-items: center;  
-    margin-bottom: 200px;  
+    gap: 30px;
+    margin-bottom: 100px;  
 }
 .section{
     text-align: center;
-    animation: float 3s ease-out infinite;
 }
 
 /* ANIMATION */
@@ -53,7 +49,6 @@ body{
     }
 }
 
-/* Styles for the second section */
 .section:nth-child(2) {
     animation: float2 3s ease-out infinite;
 }
@@ -64,41 +59,30 @@ body{
     }
 }
 
-/* Styles for the third section */
 .section:nth-child(3) {
-    animation: float3 3s ease-out infinite;
+    animation: float3 2s ease-out infinite;
 }
 
 @keyframes float3 {
     50% {
-        transform: translateX(150px);
+        transform: translateX(100px);
     }
 }
-/* Footer */
-.inc-name{
-    margin-left: 100px;
-}
-.oleg-socials{
-    color:white;
-}
-.text-body-secondary{
-    color: white;
-}
-.info-footer{
-    border-top: 2px solid aliceblue;
-}
 
-footer .text-body-secondary,.soical{
-    color:white
-}
+
+/* FOOTER */
+ .oleg-socials{
+    color:white;
+} 
+
+/* SECOND PAGES */
 
 /* //PHOTOS */
-#carouselExampleIndicators{
-    margin-top: 20px;
-}
 .img-carousel {
     object-fit: cover;
-    height:900px; 
+    max-width: 70%;
+    display: block;
+    margin: auto;
 }
 #photos-header{
     text-align: center;
@@ -107,6 +91,37 @@ footer .text-body-secondary,.soical{
 }
 .container{
     margin-bottom: 50px;
+}
+
+
+/* INFO */
+
+.information{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    text-align: center;
+    font-family: pixelFont;
+    color: rgb(196, 16, 16);
+}
+.socials{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.socials a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-social{
+    width:20px;
+    margin-right: 10px;
 }
 
 /* MUSIC */
@@ -118,7 +133,7 @@ footer .text-body-secondary,.soical{
 }
 
 
-/* HOME */
+/* LIFT */
 .home{
  text-align: center;
     font-family: pixelFont;
@@ -134,4 +149,13 @@ footer .text-body-secondary,.soical{
 
 .carousel-item img{
     width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .responsive-image{
+        content: url("./assets/mobile/mobile_gif.gif");
+    }
+    
 }
