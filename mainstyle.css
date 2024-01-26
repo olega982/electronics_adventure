@@ -10,11 +10,20 @@
 }
 
 body{
-    background-image: url("./assets/desktop/background.jpeg") ;
+    background-image: url("./assets/desktop/backGroundnew.jpg") ;
     color:aliceblue;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
+}
+.desktop-heading{
+    font-family: pixelFont;
+    font-size: 60px;
+    text-shadow: 
+    -5px -5px 0 #ff0000, /* Top-left shadow (red) */
+    1px -1px 0 #ff0000, /* Top-right shadow (red) */
+    -1px 1px 0 #ff0000, /* Bottom-left shadow (red) */
+    1px 1px 0 #ff0000; /* Bottom-right shadow (red) */
 }
 
 .footer{
@@ -27,10 +36,13 @@ body{
 .mobile-headind{
     display: none;
 }
-
+.main-heading{
+     text-align: center;
+    font-family: pixelFont;
+}
 .icon{
-    width: 150px;
-    height:150px;
+    width: 100px;
+    height:100px;
 }
 
 .fw-normal{
@@ -41,7 +53,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 100px;  
+    margin-bottom: 50px;  
 }
 .section{
     text-align: center;
@@ -203,6 +215,10 @@ body{
     .img-carousel {
         max-width: 100%;
     }
+    .desktop-heading{
+        display: none;
+    }
+
 
     
 }
