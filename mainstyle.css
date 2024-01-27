@@ -106,7 +106,7 @@ html {
 /* //PHOTOS */
 .img-carousel {
   object-fit: cover;
-  max-width: 60%;
+  max-width: 45%;
   display: block;
   margin: auto;
 }
